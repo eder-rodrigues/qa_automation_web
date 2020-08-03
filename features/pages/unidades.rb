@@ -27,7 +27,6 @@ class Unidades < SitePrism::Page
         random = rand(1..3)
         for a in 0..random do
             checkbox = rand(1..i)
-            puts "batata" 
             find(:xpath,"(//*[@class='checkbox-fieldcomponentstyle__CheckboxFieldStyled-sc-1mdajsk-0 DRDNI'])[#{checkbox}]").click   
         end
     end 
