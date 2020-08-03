@@ -1,0 +1,12 @@
+## YAML Template
+---
+
+default: --format progress -p html -p hk -p chrome
+
+ci: --format progress -p json
+html: --format html --out=reports/report.html
+json: --format json --out=reports/report.html
+hk: ENV_TYPE=hk
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox  
+ie: BROWSER=ie
