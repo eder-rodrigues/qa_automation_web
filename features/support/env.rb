@@ -56,7 +56,4 @@ Capybara.configure do |config|
 	Capybara.default_driver = :selenium
 	config.app_host = DATA['URL']	
 	Capybara.default_max_wait_time = 20	
-end 	
-	
-ENV['ENV'] = 'HK' unless ENV.key?'ENV'
-	MASSA = YAML.load_file('./fixtures/default_data.yml')[ENV['ENV']]
+end
